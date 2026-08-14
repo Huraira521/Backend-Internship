@@ -8,6 +8,20 @@ This project is the starting backend application for the internship. It demonstr
 
 The project currently provides a simple health-check API to verify that the backend server is running correctly.
 
+## Live Deployment
+
+The backend API is deployed on Vercel.
+
+**Live URL:** https://backend-internship-delta.vercel.app
+
+### Health Check
+
+https://backend-internship-delta.vercel.app/health
+
+## API Status
+
+The `/health` endpoint returns the current API status and timestamp.
+
 ## Tech Stack
 
 * Node.js
