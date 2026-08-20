@@ -1,0 +1,127 @@
+{
+  "info": {
+    "_postman_id": "646b0c1d-db13-457e-b91f-e496bcc12a16",
+    "name": "Tas2-RecipeAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "49535495",
+    "_collection_link": "https://go.postman.co/collection/49535495-646b0c1d-db13-457e-b91f-e496bcc12a16?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Create Recipe",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Pasta\",\r\n  \"description\": \"Updated Italian dish\",\r\n  \"category\": \"Italian\",\r\n  \"prepTime\": 30,\r\n  \"cookTime\": 60,\r\n  \"difficulty\": \"medium\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/recipes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "recipes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Recipes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/recipes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "recipes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Recipe By ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/recipes/1786908385315",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "recipes",
+            "1786908385315"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Recipe",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Pasta\",\r\n  \"description\": \"Updated Italian dish\",\r\n  \"category\": \"Italian\",\r\n  \"prepTime\": 30,\r\n  \"cookTime\": 60,\r\n  \"difficulty\": \"hard\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/recipes/1786908385315",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "recipes",
+            "1786908385315"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Recipe",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/recipes/1786908385315",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "recipes",
+            "1786908385315"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
